@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+//import { useDispatch, useSelector } from 'react-redux';
 import Recipe from "../Recipe/Recipe";
 import FilteredDiet from "../FilteredDiet/FilteredDiet";
 import Pagination from "../Pagination/Pagination";
@@ -10,8 +11,10 @@ import loading from "../../img/loading-line.gif";
 import "./Recipes.css";
 
 const Recipes = ({ location, allRecipes, searchedRecipes, searchRecipes }) => {
+  //const dispatch = useDispatch();
   const [recipes, setRecipes] = useState([]);
   const [page, setPage] = useState(1);
+  //const byDiet = useSelector((state) => state.filterByDiet);
 
   useEffect(() => {
     if (location.search !== "") {

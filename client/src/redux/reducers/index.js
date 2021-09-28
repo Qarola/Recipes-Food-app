@@ -34,6 +34,11 @@ export default function rootReducer(state = initialState, action) {
         ...state,
         allDiets: action.payload,
       };
+      case "FILTER_BY_DIET":
+      return {
+        ...state,
+        allRecipes: state.allRecipes.filter(e =>  e.diets.includes(action.payload))
+      };
 
     default:
       return state;
