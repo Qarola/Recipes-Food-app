@@ -89,11 +89,3 @@ export function getAllDiets() {
       });
   };
 }
-
-export function filterByDiet(payload) {
-  return {
-      type: 'FILTER_BY_DIET',
-      payload
-   
-  };
-};
