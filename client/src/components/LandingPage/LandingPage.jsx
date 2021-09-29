@@ -1,11 +1,9 @@
 import React from "react";
-//import { getAllRecipes, getAllDiets } from "../../redux/actions/index.js";
-//import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import "./LandingPage.css";
 
-export default function LandingPage() {
-
+function LandingPage() {
+ 
   return (
     <div className="lp">
       <div id="info">
@@ -22,11 +20,5 @@ export default function LandingPage() {
   );
 }
 
-/* function mapDispatchToProps(dispatch) {
-  return {
-    getAllRecipes: () => dispatch(getAllRecipes()),
-    getAllDiets: () => dispatch(getAllDiets()),
-  };
-} */
 
-//export default connect(null, mapDispatchToProps)(LandingPage);
+export default LandingPage;
